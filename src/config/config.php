@@ -11,5 +11,5 @@ return array(
      |
      */
 
-    'dump_path' => 'public/js/routes.js',
+    'dump_path' => 'resources/assets/js/routes.js',
 );

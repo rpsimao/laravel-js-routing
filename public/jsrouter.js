@@ -15,7 +15,7 @@ var JSRouter = {
 		}
 
 		if (this.routesByAction[name] instanceof Object == false) {
-			console.error(this.package + "route '" + name + "' is undefined.");
+			console.error(this.package + `route '${name}' is undefined.`);
 			return '';
 		}
 
@@ -26,10 +26,10 @@ var JSRouter = {
 			param = selected.parameters[key];
 
 			if (parameters[param]) {
-				selected.route = selected.route.replace('{' + param + '}', parameters[param]);
+				selected.route = selected.route.replace(`{${param}}`, parameters[param]);
 			}
 			else {
-				selected.route = selected.route.replace('/{' + param + '}', '');
+				selected.route = selected.route.replace(`/{${param}}`, '');
 			}
 		}
 
@@ -47,7 +47,7 @@ var JSRouter = {
 		}
 
 		if (this.routesByName[name] instanceof Object == false) {
-			console.error(this.package + "route '" + name + "' is undefined.");
+			console.error(this.package + `route '${name}' is undefined.`);
 			return '';
 		}
 
@@ -58,10 +58,10 @@ var JSRouter = {
 			param = selected.parameters[key];
 
 			if (parameters[param]) {
-				selected.route = selected.route.replace('{' + param + '}', parameters[param]);
+				selected.route = selected.route.replace(`{${param}}`, parameters[param]);
 			}
 			else {
-				selected.route = selected.route.replace('/{' + param + '}', '');
+				selected.route = selected.route.replace(`/{${param}}`, '');
 			}
 		}
 

@@ -1,7 +1,7 @@
-<?php namespace DelormeJonathan\LaravelJsRouting;
+<?php namespace rpsimao\LaravelJsRouting;
 
 use Illuminate\Support\ServiceProvider;
-use DelormeJonathan\LaravelJsRouting\Commands\Dump;
+use rpsimao\LaravelJsRouting\Commands\Dump;
 
 class LaravelJsRoutingServiceProvider extends ServiceProvider {
 

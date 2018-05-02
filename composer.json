@@ -1,6 +1,6 @@
 {
-    "name": "delormejonathan/laravel-js-routing",
-    "description": "Laravel 4/5 package to access Routing from Javascript",
+    "name": "rpsimao/laravel-js-routing",
+    "description": "Laravel 5 package to access Routing from Javascript",
     "license": "MIT",
     "keywords": ["laravel", "routing"],
     "authors": [
@@ -10,12 +10,22 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=7.1.0"
     },
     "autoload": {
         "psr-0": {
-            "DelormeJonathan\\LaravelJsRouting\\": "src/"
+            "rpsimao\\LaravelJsRouting\\": "src/"
         }
     },
     "minimum-stability": "stable"
-}
+},
+    "extra": {
+    "laravel": {
+        "providers": [
+            "rpsimao\\LaravelJsRouting\\LaravelJsRoutingServiceProvider"
+        ],
+        "aliases": {
+            "JSRouter": "rpsimao\\LaravelJsRouting\\Facades\\JSRouter"
+           }
+        }
+    }
