@@ -17,10 +17,9 @@
             "rpsimao\\LaravelJsRouting\\": "src/"
         }
     },
-    "minimum-stability": "stable"
-},
+    "minimum-stability": "stable",
     "extra": {
-    "laravel": {
+        "laravel": {
         "providers": [
             "rpsimao\\LaravelJsRouting\\LaravelJsRoutingServiceProvider"
         ],
@@ -29,3 +28,4 @@
            }
         }
     }
+}
